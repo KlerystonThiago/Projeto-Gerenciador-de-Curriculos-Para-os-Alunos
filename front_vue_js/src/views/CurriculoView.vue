@@ -108,21 +108,99 @@
             <div class="box_right">
                <h1 class="titles_main">EXPERIÊNCIA PROFISSIONAL</h1>
                <div class="division"></div>
-               <section>
-                  <div class="col_left">                     
-                     <div class="timelapse_marker"></div>
-                     <div class="timelapse_vertical_line"></div>
-                  </div>
-                  <div class="col_right">
-                     <h1>
-                        AirStudio / Creative Director
-                     </h1>
-                     <span>De 2005 à 2008</span>
-                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum quas molestiae culpa aut obcaecati ullam numquam quisquam dolor sequi eum asperiores et rerum ducimus nihil laboriosam iste, nemo voluptas ipsa.
-                     </p>
-                  </div>
-               </section>               
+               
+               <div class="sections_contents">
+                  <section>
+                     <div class="col_left">                     
+                        <div class="timelapse_marker"></div>
+                        <div class="timelapse_vertical_line"></div>
+                     </div>
+                     <div class="col_right">
+                        <section>
+                           <h1>
+                              AirStudio / Creative Director
+                           </h1>
+                           <span>De 2005 à 2008</span>
+                           <p>
+                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum quas molestiae culpa aut obcaecati ullam numquam quisquam dolor sequi eum asperiores et rerum ducimus nihil laboriosam iste, nemo voluptas ipsa.
+                           </p>
+                        </section>
+                     </div>
+                  </section>               
+                  
+                  <section>
+                     <div class="col_left">                     
+                        <div class="timelapse_marker"></div>
+                        <div class="timelapse_vertical_line"></div>
+                     </div>
+                     <div class="col_right">
+                        <section>
+                           <h1>
+                              AirStudio / Creative Director
+                           </h1>
+                           <span>De 2005 à 2008</span>
+                           <p>
+                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum quas molestiae culpa aut obcaecati ullam numquam quisquam dolor sequi eum asperiores et rerum ducimus nihil laboriosam iste, nemo voluptas ipsa.
+                           </p>
+                        </section>
+                     </div>
+                  </section>               
+                  
+                  <section>
+                     <div class="col_left">                     
+                        <div class="timelapse_marker"></div>
+                        <div class="timelapse_vertical_line"></div>
+                     </div>
+                     <div class="col_right">
+                        <section>
+                           <h1>
+                              AirStudio / Creative Director
+                           </h1>
+                           <span>De 2005 à 2008</span>
+                           <p>
+                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum quas molestiae culpa aut obcaecati ullam numquam quisquam dolor sequi eum asperiores et rerum ducimus nihil laboriosam iste, nemo voluptas ipsa.
+                           </p>
+                        </section>
+                     </div>
+                  </section> 
+               </div>
+
+               <h1 class="titles_main mp-1">EXPERIÊNCIA PROFISSIONAL</h1>
+               <div class="division"></div> 
+               
+               <div class="references_container">
+                  <section>
+                     <div class="brand">BRAND</div>
+                     <div class="reference">
+                        <h2>Jonathan Doe</h2>
+                        <p>GENERAL MANAGER</p>
+                        <p>Company Name</p>
+                        <p>contato@kleryston.com.br</p>
+                     </div>
+                     <div class="reference">
+                        <h2>Jonathan Doe</h2>
+                        <p>GENERAL MANAGER</p>
+                        <p>Company Name</p>
+                        <p>contato@kleryston.com.br</p>
+                     </div>
+                  </section>
+                  
+                  <section>
+                     <div class="brand">BRAND</div>
+                     <div class="reference">
+                        <h2>Jonathan Doe</h2>
+                        <p>GENERAL MANAGER</p>
+                        <p>Company Name</p>
+                        <p>contato@kleryston.com.br</p>
+                     </div>
+                     <div class="reference">
+                        <h2>Jonathan Doe</h2>
+                        <p>GENERAL MANAGER</p>
+                        <p>Company Name</p>
+                        <p>contato@kleryston.com.br</p>
+                     </div>
+                  </section>
+               </div>
             </div>
          </div>
       </main>

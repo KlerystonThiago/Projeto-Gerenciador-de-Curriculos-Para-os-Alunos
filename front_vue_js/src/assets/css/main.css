@@ -28,6 +28,7 @@ header{
    background-color: #e7e7e7;
    padding: 0px 50px;
    box-sizing: border-box;
+   border-radius: 8px 8px 0px 0px;
 }
 
 .box_header{
@@ -210,9 +211,12 @@ main{
    box-sizing: border-box;
 }
 
+.box_right .division{
+   margin-bottom: 30px;
+}
+
 .box_right .division::after{
-   width: 7%;
-   
+   width: 7%;   
 }
 
 .box_right .division::before{
@@ -229,8 +233,8 @@ main{
 }
 
 .col_right{
-   height: 200px; 
-   background-color: #ccc;   
+   min-height: 100px; 
+   background-color: transparent;   
    flex: 1;
    padding: 0px 30px;
 }
@@ -240,6 +244,7 @@ main{
    height: 15px;
    background-color: #b1a38d;
    border-radius: 15px;
+   margin-top: 5px;
 }
 
 .timelapse_vertical_line{
@@ -251,6 +256,86 @@ main{
    margin-top: -2px;;
 }
 
-.col_right {
-   
+.col_right h1{
+   font-size: 16px;
+   font-family: "Poppins", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   color: #777;
+}
+
+.col_right span{
+   font-size: 13px;
+   font-family: "Poppins", sans-serif;
+   font-weight: 300;
+   font-style: normal;
+   color: #b2b2b2;
+   padding-bottom: 10px;
+   display: block;
+}
+
+.col_right P{
+   font-size: 13px;
+   font-family: "Poppins", sans-serif;
+   font-weight: 300;
+   font-style: normal;
+   color: #b2b2b2;
+}
+
+.col_right section{
+   display: flex;
+   flex-direction: column;
+   padding-bottom: 20px;
+}
+
+.sections_contents > section:last-child .col_left .timelapse_vertical_line{
+   display: none;
+}
+
+.mp-1{
+   margin-top: 10px;
+}
+
+.references_container section{
+   width: 100%;
+   min-height: 70px;
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 20px;
+}
+
+.references_container section .brand{
+   background-color: #b1a38d;
+   flex: 2;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 13px;
+   font-family: "Poppins", sans-serif;
+   font-weight: 600;
+   font-style: normal;
+   color: #565045;
+}
+
+.references_container section .reference{
+   background-color: transparent;
+   flex: 3;
+   padding: 0px 20px;
+   box-sizing: border-box;   
+}
+
+.references_container section .reference h2{
+   font-size: 16px;
+   font-family: "Poppins", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   color: #565045;
+}
+
+.references_container section .reference p{
+   font-size: 12px;
+   font-family: "Poppins", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   color: #777;
 }
