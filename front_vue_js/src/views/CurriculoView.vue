@@ -7,7 +7,7 @@
             </div>
             <div class="resume">
                <h1>
-                  Kleryston Thiago
+                  {{ data.header.name }}
                </h1>
                <p>
                   Coordenador de Tecnologia
@@ -16,7 +16,7 @@
                   Como Coordenador de Tecnologia, minha experiência inclui gestão e implementação de soluções tecnológicas corporativas, liderança de equipes e alinhamento de estratégias de negócios com inovação tecnológica.
                </p>
             </div>
-        </div>
+         </div>
       </header>
       <main>
          <div class="box_main">
@@ -206,3 +206,70 @@
       </main>
    </div>
 </template>
+
+<script setup>
+   import { onMounted, ref } from 'vue'
+   import { api } from '../services/api'
+
+   let data = ref({
+      header: {
+         name: "",
+         profession: "",
+         resume: "",
+         iniciations: "",
+         avatar: ""
+      },
+      contact: {
+         email: "",
+         phone: "",
+         github: ""
+      },
+      education: [
+         {
+            formation: ""
+         }
+      ],
+      skills: [
+         {
+            skill: ""
+         }         
+      ],
+      languages: [
+         {
+            language: ""
+         }
+      ],
+      professionalexperience: [
+         {
+            job: "",
+            time: "",
+            description: ""
+         }
+      ],
+      references: [
+      {
+         brand: "",      
+         people: [
+            {
+               reference: "",
+               work: "",
+               companyname: "",
+               emailreference: ""
+            }
+         ]       
+      }      
+    ]
+   })
+
+   const curriculum = () => {
+      api.get('/curriculo')
+      .then(function (response) {        
+         data.value = response.data.data;
+         console.log(response.data.data); 
+      });
+   }
+
+   onMounted(() => {
+      curriculum()
+   });
+</script>
