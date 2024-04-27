@@ -15,7 +15,7 @@ class CurriculoController extends Controller
                 "profession" => "Cordenador de Desenvolvimento",
                 "resume" => "Como Coordenador de Tecnologia, minha experiência inclui gestão e implementação de soluções tecnológicas corporativas, liderança de equipes e alinhamento de estratégias de negócios com inovação tecnológica.",
                 "iniciations" => "KT",
-                "avatar" => "https://avatars.githubusercontent.com/u/151784293?v=4"
+                "avatar" => "https://avatars.githubusercontent.com/u/8151519?s=400&u=eb5e87ba4e55072c29444edf0a0562c086f8591c&v=4"
 
             ],
             "contacts" => [
