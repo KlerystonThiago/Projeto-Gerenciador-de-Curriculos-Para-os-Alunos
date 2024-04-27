@@ -42,9 +42,13 @@ header{
    width:300px;
    height: 100%;
    background: transparent;
-   background-image: url('../images/avatar_profissional.jfif');
    background-size: cover;
    background-position: center center;
+   z-index: 1;
+}
+
+.avatar figure img{
+   width: 100%;
 }
 
 .resume{
@@ -58,20 +62,23 @@ header{
    padding: 45px;
 }
 
-.name_letters{
+figure{
+   position: relative;
+}
+
+figure figcaption{
    width: 50px;
    height: 50px;
    background-color: #b1a38d;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+   position: absolute;
+   margin-top: -80%;
+   margin-left: calc(100% - 25px);
    font-size: 23px;
    font-family: "Poppins", sans-serif;
    font-weight: 600;
-   font-style: normal;
-   margin-top: 22%;
-   margin-left: calc(100% - 25px);
-   color: #333;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 .resume h1{

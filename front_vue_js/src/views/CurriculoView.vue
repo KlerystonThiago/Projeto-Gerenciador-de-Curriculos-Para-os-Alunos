@@ -3,7 +3,10 @@
       <header>
          <div class="box_header">
             <div class="avatar">
-               <div class="name_letters">KT</div>
+               <figure>
+                  <img :src="data.header.avatar">
+                  <figcaption>KT</figcaption>
+               </figure>
             </div>
             <div class="resume">
                <h1>
