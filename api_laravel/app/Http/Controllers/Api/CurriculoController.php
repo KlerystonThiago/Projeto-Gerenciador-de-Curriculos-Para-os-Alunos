@@ -13,98 +13,122 @@ class CurriculoController extends Controller
             "header" => [
                 "name" => "Kleryston Thiago",
                 "profession" => "Cordenador de Desenvolvimento",
-                "resume" => "KLERYSTON THE BEST PROFESSIONAL TEACHER FOREVER ♥",
+                "resume" => "Como Coordenador de Tecnologia, minha experiência inclui gestão e implementação de soluções tecnológicas corporativas, liderança de equipes e alinhamento de estratégias de negócios com inovação tecnológica.",
                 "iniciations" => "KT",
                 "avatar" => "https://avatars.githubusercontent.com/u/151784293?v=4"
 
             ],
-            "contact" => [
-                "email" => "kleryston.thiago@gmail.com",
-                "phone" => "(81) 99400-3340",
-                "github" => "https://github.com/klerystony",
-
-            ],
-            "education" => [
+            "contacts" => [
                 [
-                    "formation" => "UniCesumar 2021 – 07/2024 Tecnologia em Análise e Desenvolvimento de Sistemas."
+                    "icon" => "fa-solid fa-phone",
+                    "content" => "(81) 99400-3340",
+                ],
+                [
+                    "icon" => "fa-regular fa-envelope",
+                    "content" => "kleryston.thiago@gmail.com",
+                ],
+
+                [
+                    "icon" => "fa-brands fa-linkedin-in",
+                    "content" => "https://www.linkedin.com/in/kleryston-thiago-1181a8156/"
+                ]
+            ],
+            "educations" => [
+                [
+                    "formation" => "Tecnologo | SPI",
+                    "university" => "UNIPÊ | João Pessoa",
+                    "date" => "2013 - 2015"
+                ],
+                [
+                    "formation" => "Tecnologo | ADS",
+                    "university" => "UNINASSAU | Recife",
+                    "date" => "2015 - 2018"
+                ],
+                [
+                    "formation" => "Pós Graduação | Desenvolvimento Full Stack",
+                    "university" => "ESTÁCIO | Recife",
+                    "date" => "2020 - 2021"
                 ]
             ],
             "skills" => [
-                [
-                    "skill" => "Hardware / Software"
-                ],
-                [
-                    "skill" => "Desenvolvimento WEB"
-                ],
-                [
-                    "skill" => "Suporte N1 e N2"
-                ],
-                [
-                    "skill" => "C# / Médio"
-                ],
-                [
-                    "skill" => "SQL / Básico"
-                ],
-                [
-                    "skill" => "Git e Github"
-                ]
+                "HTML5",
+                "CSS3",
+                "PHP",
+                "LARAVEL",
+                "NODE JS",
+                "JAVASCRIPT",
+                "REACT JS",
+                "VUE JS",
+                "BOOTSTRAP CSS",
+                "TAILWIND CSS",
+                "C#",
+                "QUASAR",
+            ],
+            "interests" => [
+                "Desenvolvimento Full Stack",
+                "Design Gráfico",
+                "Desinvolvimento Front End",
+                "Desinvolvimento Mobile",
             ],
             "languages" => [
-                [
-                    "language" => "Inglês / intermediário"
-                ]
+                "Inglês / intermediário",
+                "Espanhol / intermediário"
             ],
             "professionalexperience" => [
                 [
                     "job" => "AirStudio / Creative Director",
-                    "time" => "De 2005 á 2008",
+                    "date" => "De 2005 á 2008",
                     "description" => "Lorem ipsum, dolor sit amet consectetur adipisicing elit. At repellat id iusto modi voluptates libero soluta officiis odit minus rerum, velit voluptatem deserunt eligendi! Suscipit quis quos blanditiis sint minima!"
                 ],
                 [
                     "job" => "AirStudio / Creative Director",
-                    "time" => "De 2005 á 2008",
+                    "date" => "De 2005 á 2008",
                     "description" => "Lorem ipsum, dolor sit amet consectetur adipisicing elit. At repellat id iusto modi voluptates libero soluta officiis odit minus rerum, velit voluptatem deserunt eligendi! Suscipit quis quos blanditiis sint minima!"
                 ],
                 [
                     "job" => "AirStudio / Creative Director",
-                    "time" => "De 2005 á 2008",
+                    "date" => "De 2005 á 2008",
                     "description" => "Lorem ipsum, dolor sit amet consectetur adipisicing elit. At repellat id iusto modi voluptates libero soluta officiis odit minus rerum, velit voluptatem deserunt eligendi! Suscipit quis quos blanditiis sint minima!"
                 ]
 
             ],
            "references" => [
                 [
-                    "brand" => "brand",
-                    "people" => [
+                    "brand" => "LOGO",
+                    "referencepeoples" => [
                         [
-                            "reference" => "Jonathan Doe",
-                            "work" => "GENERAL MANAGER",
-                            "companyname" => "Company Name",
-                            "emailreference" => "bas@company.com"
+                            "reference" => "Fred Rabelo",
+                            "work" => "CEO",
+                            "companyname" => "TISAUDE",
+                            "emailreference" => "fredrabelo@gmail.com"
+                        ],
+                        [
+                            "reference" => "Vitor Emanuel",
+                            "work" => "Coordenador Geral",
+                            "companyname" => "Globo Recife",
+                            "emailreference" => "vitor@globo.com.br"
 
                         ],
-                        [
-                            "reference" => "Jonathan Doe",
-                            "work" => "GENERAL MANAGER",
-                            "companyname" => "Company Name",
-                            "emailreference" => "bas@company.com"
-                        ],
+
                     ]
                 ],
                 [
-                    "brand" => "brand",
-                    [
-                        "reference" => "Jonathan Doe",
-                        "work" => "GENERAL MANAGER",
-                        "companyname" => "Company Name",
-                        "emailreference" => "bas@company.com"
-                    ],
-                    [
-                        "reference" => "Jonathan Doe",
-                        "work" => "GENERAL MANAGER",
-                        "companyname" => "Company Name",
-                        "emailreference" => "bas@company.com"
-                    ],
+                    "brand" => "LOGO",
+                    "referencepeoples" => [
+                        [
+                            "reference" => "Renato Faustino",
+                            "work" => "Gerente Geral",
+                            "companyname" => "SBT",
+                            "emailreference" => "renatofaustino@sbt.com.br"
+
+                        ],
+                        [
+                            "reference" => "Marta Soares",
+                            "work" => "Coordenadora de Tecnologia",
+                            "companyname" => "Accenture",
+                            "emailreference" => "martasoares@accenture.com.br"
+                        ],
+                    ]
                 ]
             ],
         ];

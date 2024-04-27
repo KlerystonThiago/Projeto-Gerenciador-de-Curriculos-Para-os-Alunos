@@ -10,10 +10,10 @@
                   {{ data.header.name }}
                </h1>
                <p>
-                  Coordenador de Tecnologia
+                  {{ data.header.profession }}
                </p>
                <p>
-                  Como Coordenador de Tecnologia, minha experiência inclui gestão e implementação de soluções tecnológicas corporativas, liderança de equipes e alinhamento de estratégias de negócios com inovação tecnológica.
+                  {{  data.header.resume }}
                </p>
             </div>
          </div>
@@ -22,87 +22,58 @@
          <div class="box_main">
             <div class="box_left">            
                <section>
-                  <h1 class="titles_main">CONTATO</h1>
-                  <div class="division"></div>
-                  <div class="box_left_section_content">
-                     <i class="fa-solid fa-phone"></i>
-                     <p>(81) 9 9400-3340</p>
-                  </div>
-                  <div class="box_left_section_content">
-                     <i class="fa-regular fa-envelope"></i>
-                     <p>kleryston.thiago@gmail.com</p>
-                  </div>
-                  <div class="box_left_section_content">
-                     <i class="fa-solid fa-globe"></i>
-                     <p>kleryston.com.br</p>
-                  </div>
+                  <h1 class="titles_main">CONTATOS</h1>
+                  <div class="division"></div>                  
+                  <div v-for="contact in data.contacts" class="box_left_section_content">
+                     <i :class="contact.icon"></i>
+                     <p>{{ contact.content }}</p>
+                  </div>                 
                </section>            
             
                <section>
                   <h1 class="titles_main">FORMAÇÕES</h1>
                   <div class="division"></div>
-                  <div class="box_left_section_content">
-                     <p>
-                        Masters Degress | Major <br>
-                        Air University | Location <br>
-                        2019 - 2022
-                     </p>
-                  </div>
-                  <div class="box_left_section_content">
-                     <p>
-                        Bachelor | Major <br>
-                        Langit University | Location <br>
-                        2019 - 2024
-                     </p>
-                  </div>
+                  <div v-for="education in data.educations" class="box_left_section_content">
+                     <section class="formation">
+                        <p>
+                           {{ education.formation }}                           
+                        </p>
+                        <p>
+                           {{ education.university }}                           
+                        </p>
+                        <p>
+                           {{ education.date }}
+                        </p>
+                     </section>
+                  </div>                  
                </section>  
                <section>
                   <h1 class="titles_main">HABILIDADES</h1>
                   <div class="division"></div>
-                  <div class="box_left_section_content justify-space-around">                  
-                     <p>HTML5</p>
-                     <p>CSS3</p>                  
-                  </div>               
-                  <div class="box_left_section_content justify-space-around">                  
-                     <p>PHP</p>
-                     <p>LARAVEL</p>                  
-                  </div>               
-                  <div class="box_left_section_content justify-space-around">                  
-                     <p>NODE JS</p>
-                     <p>JAVASCRIPT</p>                  
-                  </div>               
-                  <div class="box_left_section_content justify-space-around">                  
-                     <p>REACT JS</p>
-                     <p>VUE JS</p>                  
-                  </div>               
-                  <div class="box_left_section_content justify-space-around">                  
-                     <p>BOOTSTRAP CSS</p>
-                     <p>TAILWIND CSS</p>                  
-                  </div>               
-                  <div class="box_left_section_content justify-space-around">                  
-                     <p>C#</p>
-                     <p>QUASAR</p>                  
+                  <div class="box_left_section_content skills">
+                     <p v-for="skill in data.skills">
+                        {{ skill }}
+                     </p>                                     
                   </div>               
                </section> 
                <section>
                   <h1 class="titles_main">INTERESSES</h1>
                   <div class="division"></div>
-                  <div class="box_left_section_content">
+                  <div v-for="interest in data.interests" class="box_left_section_content">
                      <div class="marker"></div>
-                     <p>Desenvolvimento Full Stack</p>
-                  </div>
-                  <div class="box_left_section_content">
-                     <div class="marker"></div>
-                     <p>Design Gráfico</p>
-                  </div>
-                  <div class="box_left_section_content">
-                     <div class="marker"></div>
-                     <p>Desenvolvimento Front end</p>
-                  </div>
-                  <div class="box_left_section_content">
-                     <div class="marker"></div>
-                     <p>Desenvolvimento Mobile</p>
-                  </div>
+                     <p>{{ interest }}</p>
+                  </div>                  
+               </section>  
+               <section>
+                  <h1 class="titles_main">IDIOMAS</h1>
+                  <div class="division"></div>
+                  <div v-for="language in data.languages" class="box_left_section_content">
+                     <section class="formation">
+                        <p>
+                           {{ language }}                        
+                        </p>
+                     </section>
+                  </div>                  
                </section>  
             </div>
             <div class="box_right">
@@ -110,7 +81,7 @@
                <div class="division"></div>
                
                <div class="sections_contents">
-                  <section>
+                  <section v-for="experience in data.professionalexperience">
                      <div class="col_left">                     
                         <div class="timelapse_marker"></div>
                         <div class="timelapse_vertical_line"></div>
@@ -118,87 +89,29 @@
                      <div class="col_right">
                         <section>
                            <h1>
-                              AirStudio / Creative Director
+                              {{ experience.job }}
                            </h1>
-                           <span>De 2005 à 2008</span>
+                           <span>{{ experience.date }}</span>
                            <p>
-                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum quas molestiae culpa aut obcaecati ullam numquam quisquam dolor sequi eum asperiores et rerum ducimus nihil laboriosam iste, nemo voluptas ipsa.
+                              {{ experience.description }}
                            </p>
                         </section>
                      </div>
-                  </section>               
-                  
-                  <section>
-                     <div class="col_left">                     
-                        <div class="timelapse_marker"></div>
-                        <div class="timelapse_vertical_line"></div>
-                     </div>
-                     <div class="col_right">
-                        <section>
-                           <h1>
-                              AirStudio / Creative Director
-                           </h1>
-                           <span>De 2005 à 2008</span>
-                           <p>
-                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum quas molestiae culpa aut obcaecati ullam numquam quisquam dolor sequi eum asperiores et rerum ducimus nihil laboriosam iste, nemo voluptas ipsa.
-                           </p>
-                        </section>
-                     </div>
-                  </section>               
-                  
-                  <section>
-                     <div class="col_left">                     
-                        <div class="timelapse_marker"></div>
-                        <div class="timelapse_vertical_line"></div>
-                     </div>
-                     <div class="col_right">
-                        <section>
-                           <h1>
-                              AirStudio / Creative Director
-                           </h1>
-                           <span>De 2005 à 2008</span>
-                           <p>
-                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum quas molestiae culpa aut obcaecati ullam numquam quisquam dolor sequi eum asperiores et rerum ducimus nihil laboriosam iste, nemo voluptas ipsa.
-                           </p>
-                        </section>
-                     </div>
-                  </section> 
+                  </section>                  
                </div>
 
-               <h1 class="titles_main mp-1">EXPERIÊNCIA PROFISSIONAL</h1>
+               <h1 class="titles_main mp-1">REFERENCIAS PROFISSIONAIS</h1>
                <div class="division"></div> 
                
                <div class="references_container">
-                  <section>
-                     <div class="brand">BRAND</div>
-                     <div class="reference">
-                        <h2>Jonathan Doe</h2>
-                        <p>GENERAL MANAGER</p>
-                        <p>Company Name</p>
-                        <p>contato@kleryston.com.br</p>
-                     </div>
-                     <div class="reference">
-                        <h2>Jonathan Doe</h2>
-                        <p>GENERAL MANAGER</p>
-                        <p>Company Name</p>
-                        <p>contato@kleryston.com.br</p>
-                     </div>
-                  </section>
-                  
-                  <section>
-                     <div class="brand">BRAND</div>
-                     <div class="reference">
-                        <h2>Jonathan Doe</h2>
-                        <p>GENERAL MANAGER</p>
-                        <p>Company Name</p>
-                        <p>contato@kleryston.com.br</p>
-                     </div>
-                     <div class="reference">
-                        <h2>Jonathan Doe</h2>
-                        <p>GENERAL MANAGER</p>
-                        <p>Company Name</p>
-                        <p>contato@kleryston.com.br</p>
-                     </div>
+                  <section v-for="reference in data.references">
+                     <div class="brand">{{ reference.brand }}</div>
+                     <div v-for="people in reference.referencepeoples" class="reference">
+                        <h2>{{ people.reference }}</h2>
+                        <p>{{ people.work }}</p>
+                        <p>{{ people.companyname }}</p>
+                        <p>{{ people.emailreference }}</p>
+                     </div>                     
                   </section>
                </div>
             </div>
@@ -219,26 +132,22 @@
          iniciations: "",
          avatar: ""
       },
-      contact: {
-         email: "",
-         phone: "",
-         github: ""
-      },
-      education: [
+      contacts: [
          {
-            formation: ""
+            icon: "",
+            email: ""
+         }
+      ],      
+      educations: [
+         {
+            formation: "",
+            university: "",
+            date: ""
          }
       ],
-      skills: [
-         {
-            skill: ""
-         }         
-      ],
-      languages: [
-         {
-            language: ""
-         }
-      ],
+      skills: [],
+      interests: [],
+      languages: [],
       professionalexperience: [
          {
             job: "",
@@ -247,18 +156,18 @@
          }
       ],
       references: [
-      {
-         brand: "",      
-         people: [
-            {
-               reference: "",
-               work: "",
-               companyname: "",
-               emailreference: ""
-            }
-         ]       
-      }      
-    ]
+         {
+            brand: "",      
+            people: [
+               {
+                  reference: "",
+                  work: "",
+                  companyname: "",
+                  emailreference: ""
+               }
+            ]       
+         }      
+      ]
    })
 
    const curriculum = () => {
