@@ -52,7 +52,7 @@
                   <div class="division"></div>
                   <div class="box_left_section_content skills">
                      <p v-for="skill in data.skills">
-                        {{ skill }}
+                        {{ skill.description }}
                      </p>                                     
                   </div>               
                </section> 
@@ -61,7 +61,7 @@
                   <div class="division"></div>
                   <div v-for="interest in data.interests" class="box_left_section_content">
                      <div class="marker"></div>
-                     <p>{{ interest }}</p>
+                     <p>{{ interest.description }}</p>
                   </div>                  
                </section>  
                <section>
@@ -70,7 +70,7 @@
                   <div v-for="language in data.languages" class="box_left_section_content">
                      <section class="formation">
                         <p>
-                           {{ language }}                        
+                           {{ language.description }}                        
                         </p>
                      </section>
                   </div>                  
@@ -108,7 +108,7 @@
                      <div class="brand">{{ reference.brand }}</div>
                      <div v-for="people in reference.referencepeoples" class="reference">
                         <h2>{{ people.reference }}</h2>
-                        <p>{{ people.work }}</p>
+                        <p>{{ people.function }}</p>
                         <p>{{ people.companyname }}</p>
                         <p>{{ people.emailreference }}</p>
                      </div>                     
