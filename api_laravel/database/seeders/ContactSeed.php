@@ -25,7 +25,7 @@ class ContactSeed extends Seeder
 
         Contact::create([
             "curriculo_id" => 1,
-            "icon" => "fa-brands fa-linkedin-ine",
+            "icon" => "fa-brands fa-linkedin-in",
             "content" => "https://www.linkedin.com/in/kleryston-thiago-1181a8156"
         ]);
     }

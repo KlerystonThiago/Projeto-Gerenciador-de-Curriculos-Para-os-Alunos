@@ -24,9 +24,9 @@ class ReferenceSeed extends Seeder
             "curriculo_id" => 1,
             "company_id" => 1,
             "brand" => "BRAND 1",
-            "reference_name" => "Vitor Emanuel",
+            "reference_name" => "Flávio Rabelo",
             "function" => "Coordenador Geral",
-            "company_name" => "Globo Recife",
+            "company_name" => "TISAUDE",
             "reference_email" => "vitor@globo.com.br",
         ]);
 
@@ -36,7 +36,7 @@ class ReferenceSeed extends Seeder
             "brand" => "BRAND 2",
             "reference_name" => "Renato Faustino",
             "function" => "Gerente Geral",
-            "company_name" => "SBT",
+            "company_name" => "Accenture",
             "reference_email" => "renatofaustino@sbt.com.br",
         ]);
 
